@@ -1,0 +1,264 @@
+.red {
+    color: hsl(0, 100%, 74%);
+}
+
+.green {
+    color: hsl(154, 59%, 51%);
+}
+
+.blue {
+    color: hsl(248, 32%, 49%);
+}
+
+.dark-blue {
+    color: hsl(249, 10%, 26%);
+}
+
+.grayish-blue {
+    color: hsl(246, 25%, 77%);
+}
+
+
+html,
+body {
+    /* box model */
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* font & other */
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 100%, 74%) url(./images/bg-intro-mobile.png) center no-repeat;
+}
+
+* {
+    /* box model */
+    box-sizing: border-box;
+}
+
+/* main */
+main {
+    /* box model */
+    margin: 50px 30px 0;
+}
+
+/* article */
+article {
+    /* box model */
+    padding: 20px;
+}
+
+.title {
+    /* box model */
+    margin: 20px 0 0;
+    /* font & other */
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.text {
+    /* box model */
+    margin: 25px 0 0;
+    /* font & other */
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+/* section */
+.price {
+    /* box model */
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 hsla(249, 10%, 26%, 0.5);
+    /* font & other */
+    background: hsl(248, 32%, 49%);
+}
+
+.price p {
+    /* box model */
+    width: 70%;
+    margin: 16px auto;
+    padding: 12px;
+    /* font & other */
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.price p span {
+    /* font & other */
+    font-weight: 600;
+}
+
+/* form */
+.subscribe-form {
+    /* box model */
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 hsla(249, 10%, 26%, 0.5);
+    /* font & other */
+    background: #fff;
+}
+
+.subscribe-form input {
+    /* display */
+    display: block;
+    /* box model */
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    padding: 0 30px;
+    border: 0.8px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+.subscribe-form input::placeholder {
+    /* font & other */
+    font-size: 14px;
+}
+
+.submit-btn {
+    /* display */
+    display: block;
+    /* box model */
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 hsl(154, 55%, 35%);
+    /* font & other */
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #fff;
+    background: hsl(154, 59%, 51%);
+}
+
+.subscribe-text {
+    /* box model */
+    margin-top: 16px;
+    padding: 0 15px;
+    /* font & other */
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.subscribe-text span {
+    /* font & other */
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* responsive */
+@media (min-width: 375px) {
+    body {
+        /* font & other */
+        background: hsl(0, 100%, 74%) url(./images/bg-intro-desktop.png) center no-repeat;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        /* display */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main {
+        /* display */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box model */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    article {
+        /* display */
+        flex-basis: 50%;
+        /* box model */
+        padding: 0 5%;
+    }
+
+    .title {
+        /* font & other */
+        font-size: 36px;
+        text-align: start;
+    }
+
+    .text {
+        /* font & other */
+        text-align: start;
+    }
+
+    section {
+        /* display */
+        flex-basis: 50%;
+        /* box model */
+        padding: 0 5%;
+    }
+
+    .price p {
+        /* box model */
+        width: 100%;
+        height: 60px;
+        margin: 16px auto;
+    }
+
+    .subscribe-form {
+        /* box model */
+        margin-top: 2px;
+    }
+
+    .subscribe-text {
+        /* box model */
+        padding: 0;
+    }
+}
+
+/* active state */
+.submit-btn:hover {
+    background: hsl(154, 71%, 66%);
+}
+
+input.error {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+label.error {
+    /* display */
+    display: block;
+
+    /* box model */
+    padding-left: 30px;
+    margin-top: 5px;
+
+    /* font & other */
+    font-size: 10px;
+    font-style: italic;
+    text-align: end;
+    color: hsl(0, 100%, 74%);
+}
+
+.focus-in {
+    outline: 1px solid hsl(210, 100%, 59%);
+}
